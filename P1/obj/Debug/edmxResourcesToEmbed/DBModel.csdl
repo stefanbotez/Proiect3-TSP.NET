@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DBModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Media" EntityType="DBModel.Media" />
+    <EntitySet Name="Tags" EntityType="DBModel.Tags" />
+    <AssociationSet Name="MediaTags" Association="DBModel.MediaTags">
+      <End Role="Media" EntitySet="Media" />
+      <End Role="Tags" EntitySet="Tags" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Media">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Creation_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Description" Type="String" Nullable="true" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Tags" Relationship="DBModel.MediaTags" FromRole="Media" ToRole="Tags" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" DefaultValue="False" />
+  </EntityType>
+  <EntityType Name="Tags">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Media" Relationship="DBModel.MediaTags" FromRole="Tags" ToRole="Media" />
+    <Property Name="MediaId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="MediaTags">
+    <End Type="DBModel.Media" Role="Media" Multiplicity="1" />
+    <End Type="DBModel.Tags" Role="Tags" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Media">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tags">
+        <PropertyRef Name="MediaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
