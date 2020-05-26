@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostWCF", "HostWCF\HostWCF.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P1.GUI", "P1.GUI\P1.GUI.csproj", "{7DB5D893-DC8E-4CA7-A37A-EAFF71DC75C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPhotos", "RazorPhotos\RazorPhotos.csproj", "{1AD0AC46-9CBE-44F6-B3A4-A7558925444B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPhotos", "RazorPhotos\RazorPhotos.csproj", "{BC1B9BDE-D1CE-4B00-9D1D-EA66F1A5D687}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{7DB5D893-DC8E-4CA7-A37A-EAFF71DC75C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DB5D893-DC8E-4CA7-A37A-EAFF71DC75C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DB5D893-DC8E-4CA7-A37A-EAFF71DC75C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1AD0AC46-9CBE-44F6-B3A4-A7558925444B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1AD0AC46-9CBE-44F6-B3A4-A7558925444B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1AD0AC46-9CBE-44F6-B3A4-A7558925444B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1AD0AC46-9CBE-44F6-B3A4-A7558925444B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1B9BDE-D1CE-4B00-9D1D-EA66F1A5D687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1B9BDE-D1CE-4B00-9D1D-EA66F1A5D687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1B9BDE-D1CE-4B00-9D1D-EA66F1A5D687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1B9BDE-D1CE-4B00-9D1D-EA66F1A5D687}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -34,3 +34,14 @@ F:\Downloads\UAIC\Anul3\sem2\TSPNET\P3\P1\obj\Debug\P1.Data.csproj.CoreCompileIn
 F:\Downloads\UAIC\Anul3\sem2\TSPNET\P3\P1\obj\Debug\P1.Data.csproj.CopyComplete
 F:\Downloads\UAIC\Anul3\sem2\TSPNET\P3\P1\obj\Debug\P1.Data.dll
 F:\Downloads\UAIC\Anul3\sem2\TSPNET\P3\P1\obj\Debug\P1.Data.pdb
+D:\Stefan\P3\P1\bin\Debug\P1.Data.dll.config
+D:\Stefan\P3\P1\bin\Debug\P1.Data.dll
+D:\Stefan\P3\P1\bin\Debug\P1.Data.pdb
+D:\Stefan\P3\P1\bin\Debug\EntityFramework.dll
+D:\Stefan\P3\P1\bin\Debug\EntityFramework.SqlServer.dll
+D:\Stefan\P3\P1\bin\Debug\EntityFramework.xml
+D:\Stefan\P3\P1\bin\Debug\EntityFramework.SqlServer.xml
+D:\Stefan\P3\P1\obj\Debug\P1.Data.csprojAssemblyReference.cache
+D:\Stefan\P3\P1\obj\Debug\P1.Data.csproj.CopyComplete
+D:\Stefan\P3\P1\obj\Debug\P1.Data.dll
+D:\Stefan\P3\P1\obj\Debug\P1.Data.pdb

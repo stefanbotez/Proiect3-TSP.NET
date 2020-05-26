@@ -17,5 +17,25 @@ namespace RazorPhotos.Models
         [DataMember]
 
         public virtual MediaDTO Media { get; set; }
+
+        public override int GetHashCode()
+        {
+            int hash = 17;
+            hash = hash * 23 + Name.GetHashCode();
+            return hash;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if ((obj == null) || !this.GetType().Equals(obj.GetType()))
+            {
+                return false;
+            }
+            else
+            {
+                TagDTO t = (TagDTO)obj;
+                return (Name == t.Name) && (MediaId == t.MediaId);
+            }
+        }
     }
 }

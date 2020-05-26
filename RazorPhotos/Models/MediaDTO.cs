@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
@@ -15,8 +16,10 @@ namespace RazorPhotos.Models
         }
         [DataMember]
         public int Id { get; set; }
+        [Display(Name = "Image")]
         [DataMember]
         public string Path { get; set; }
+        [Display(Name = "Creation Date")]
         [DataMember]
         public System.DateTime Creation_Date { get; set; }
         [DataMember]

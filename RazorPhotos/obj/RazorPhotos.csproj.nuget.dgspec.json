@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Downloads\\UAIC\\Anul3\\sem2\\TSPNET\\P3\\RazorPhotos\\RazorPhotos.csproj": {}
+    "D:\\Stefan\\P3\\RazorPhotos\\RazorPhotos.csproj": {}
   },
   "projects": {
-    "F:\\Downloads\\UAIC\\Anul3\\sem2\\TSPNET\\P3\\RazorPhotos\\RazorPhotos.csproj": {
+    "D:\\Stefan\\P3\\RazorPhotos\\RazorPhotos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Downloads\\UAIC\\Anul3\\sem2\\TSPNET\\P3\\RazorPhotos\\RazorPhotos.csproj",
+        "projectUniqueName": "D:\\Stefan\\P3\\RazorPhotos\\RazorPhotos.csproj",
         "projectName": "RazorPhotos",
-        "projectPath": "F:\\Downloads\\UAIC\\Anul3\\sem2\\TSPNET\\P3\\RazorPhotos\\RazorPhotos.csproj",
-        "packagesPath": "C:\\Users\\SBO\\.nuget\\packages\\",
-        "outputPath": "F:\\Downloads\\UAIC\\Anul3\\sem2\\TSPNET\\P3\\RazorPhotos\\obj\\",
+        "projectPath": "D:\\Stefan\\P3\\RazorPhotos\\RazorPhotos.csproj",
+        "packagesPath": "C:\\Users\\Utilizator\\.nuget\\packages\\",
+        "outputPath": "D:\\Stefan\\P3\\RazorPhotos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SBO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Utilizator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +41,24 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0-preview1.19506.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0-preview1.19506.2, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.0-preview1.19506.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.0-preview1-19509-03, )"
+            },
             "System.ServiceModel.Duplex": {
               "target": "Package",
               "version": "[4.4.*, )"
@@ -76,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

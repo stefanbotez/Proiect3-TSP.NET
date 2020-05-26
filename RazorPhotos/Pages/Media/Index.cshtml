@@ -1,0 +1,59 @@
+﻿@page
+@model RazorPhotos.Pages.Media.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<form>
+    <p>
+        Proprietate: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Cauta" />
+    </p>
+</form>
+<div>
+    <h4>
+        @Html.DisplayFor(modelItem => Model.resultNumber) rezultate gasite
+    </h4>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Media[0].Path)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Media[0].Creation_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Media[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Media[0].Tags)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Media)
+        {
+            <tr>
+                <td>
+                    <img src="@Html.DisplayFor(modelItem => item.Path)" style="width:auto;height:50px;">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Creation_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
